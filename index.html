@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mate&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>Cat Gallery</title>
+</head>
+<body>
+    
+    <div id="app">
+
+        <div id="filter-container">
+
+            <div id="search-container">
+                <input type="text" name="" id="search-field" placeholder="Rasse suchen..." autocomplete="off">
+                <img id="search-button" src="./img/search.png"></img>
+            </div>
+
+
+            <div class="search-filter" id="breed-filter" selected-item-id="NONE">
+                <div class="filter-list-item display">
+                    <span>Keine</span>
+                    <div class="filter-list-expand-button"></div>
+                </div>
+                <div class="filter-list"></div>
+            </div>
+    
+            <div class="search-filter" id="categorie-filter" selected-item-id="NONE">
+                <div class="filter-list-item display">
+                    <span>Keine</span>
+                    <div class="filter-list-expand-button"></div>
+                </div>
+                <div class="filter-list"></div>
+            </div>
+
+            <div id="load-button">Laden</div>
+        </div>
+
+        <div id="gallery"></div>
+
+    </div>
+
+
+    <img id="image-popup" class="hide" src="" alt="">
+
+
+
+</body>
+</html>
